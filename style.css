@@ -10,6 +10,7 @@
 	border-color: silver;
 	height: 100vh;
 	width: 100%;
+	box-sizing: border-box;
 }
 .inside-container{
 	display: flex;
