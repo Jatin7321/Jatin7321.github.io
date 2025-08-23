@@ -1,4 +1,9 @@
-.header{
-    color: azure;
-    justify-content: space-around;
+.welcome{
+	display: flex;
+	justify-content: center;
+}
+.welcome-container{
+	border: solid 3px;
+	height: 120px;
+	width: 400px;
 }
