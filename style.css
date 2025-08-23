@@ -4,6 +4,12 @@
 }
 .welcome-container{
 	border: solid 3px;
+	border-radius: 5px;
+	border-color: silver;
 	height: 120px;
 	width: 400px;
+}
+.inside-container{
+	color: white;
+	background-color: black;
 }
