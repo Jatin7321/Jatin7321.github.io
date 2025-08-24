@@ -1,22 +1,30 @@
+body{
+	display: flex;
+	justify-content: center;
+}
 .welcome{
 	display: flex;
 	justify-content: center;
 }
 .welcome-container{
+	display: flex;
+	justify-content: center;
 	border: solid 1px;
 	border-radius: 5px;
-	border-color: black;
+	border-color: black;t
 	background-color: rgba(217, 222, 222, 0.875);
 	display: inline-block;
 	padding: 10px;
 	height: 300px;
-	width: 420px;
+	width: 400px;
 	box-sizing: border-box;
 }
 .inside-container{
+	display: flex;
+	justify-content: center;
 	padding: 10px;
 	color: white;
 	background-color: black;
 	height: 180px;
-	width: 400px;
+	width: 360px;
 }
