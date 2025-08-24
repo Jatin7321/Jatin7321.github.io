@@ -1,14 +1,83 @@
 body{
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	font-family: Arial, sans-serif;
+	padding-top: 80px;
 }
-nav{
-	margin-bottom: 20px;
+/* Base header */
+#header {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.75);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
-nav ul li{
-	display: inline-block;
-	margin: 0 10px;
+
+/* Buttons (desktop style with MCPE texture) */
+#header .menu button {
+  background: url('/images/button.png') no-repeat center center;
+  background-size: 100% 100%;
+  width: 140px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  margin: 3px;
+  cursor: pointer;
 }
+
+/* Hamburger icon (hidden by default on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* --------------------- */
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  /* Stack vertically */
+  #header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #header .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* below header */
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.95);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2000;
+  }
+
+  #header .menu.active {
+    display: flex;
+  }
+
+  #header .menu button {
+    width: 90%;
+    margin: 8px auto;
+  }
+}
+
+
+
 .welcome{
 	display: flex;
 	justify-content: center;
@@ -41,6 +110,9 @@ nav ul li{
 	text-align: center;
 	line-height: 3;
 }
+
+
+/* load animation */
 .line{
 	position: absolute;
 	width: 90%;
@@ -70,6 +142,9 @@ nav ul li{
 	100%{ content: '...';}
 }
 
+
+
+
 /* mcpe vibe */
 body {
   margin: 0;
@@ -83,36 +158,58 @@ body {
 
 /* Clouds */
 .cloud {
-  position: fixed; /* stays in view while scrolling */
-  top: 50px;
-  width: 200px;
-  height: 100px;
-  background: url('') repeat-x;
+  position: fixed;
+  width: 260px;
+  height: 130px;
+  background: url('/images/Cloud.png') no-repeat;
   background-size: contain;
+  z-index: -1;
+  filter: blur(3px);
   animation: moveClouds 60s linear infinite;
+  opacity: 0.7;
 }
 .cloud:nth-child(2) {
-  top: 120px;
-  animation-duration: 90s;
-  opacity: 0.8;
+  animation: moveClouds 60s linear infinite;
 }
 .cloud:nth-child(3) {
-  top: 200px;
-  animation-duration: 120s;
-  opacity: 0.6;
+  animation: moveClouds2 40s linear infinite;
+}
+.cloud:nth-child(4) {
+	animation: moveClouds 20s linear infinite;
+}
+.cloud:nth-child(5) {
+	animation: moveClouds3 25s linear infinite;
+}
+@keyframes moveClouds{
+  from { left: -100px; top: 100px; }
+  to   { left: 100%; top: -20px; }
+}
+@keyframes moveClouds2{
+  from { left: -300px; top: 600px; }
+  to   { left: 100%; top: 150px; }
+}
+@keyframes moveClouds3{
+  from { left: -200px; top: 400px; }
+  to   { left: 100%; top: 100px; }
 }
 
-@keyframes moveClouds {
-  from { left: -300px; }
-  to { left: 100%; }
-}
-
-/* Ground always at bottom */
 .ground {
   position: fixed;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
-  height: 100px;
-  background: url('') repeat-x;
-  background-size: 100px 100px;
+  height: 50px;
+  background: url('/images/Grass_Block.png') repeat-x;
+  background-size: 50px 50px;
+  filter: blur(3px);
+  z-index: -1;
+}
+.ground-stone {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background: url('/images/Stone_(texture).png') repeat-x;
+	background-size: 50px 50px;
+	filter: blur(3px);
+	z-index: -1;
 }

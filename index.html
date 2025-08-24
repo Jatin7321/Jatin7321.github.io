@@ -7,18 +7,20 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Header / Navigation -->
     <header>
         <nav id="header">
-            <ul>
-                <li><a href="#welcome">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#programs">Program Repo</a></li>
-                <li><a href="#notes">Notes</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <div class="menu">
+            <button onclick="scrollToSection('welcome')">Home</button>
+            <button onclick="scrollToSection('about')">About Me</button>
+            <button onclick="scrollToSection('programs')">Program Repo</button>
+            <button onclick="scrollToSection('notes')">Notes</button>
+            <button onclick="scrollToSection('contacts')">Contact</button>
+            </div>
         </nav>
     </header>
 
@@ -29,7 +31,10 @@
         </div>
             <div class="cloud"></div>
             <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
             <div class="ground"></div>
+            <div class="ground-stone"></div>
         <div class="welcome-container">
             <p>Scroll down to explore<span class="dots"></span></p>
             <div class="inside-container">
@@ -38,7 +43,6 @@
                  <p class="line">Feel free to explore my work, and get a glimpse of the skills, passion, and curiosity that drive me forward.</p>
             </div>
         </div>
-<script src="script.js"></script>
     </section>
     
     <section id="about">
