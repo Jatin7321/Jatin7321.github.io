@@ -1,6 +1,13 @@
 body{
-	display: flex;
 	text-align: center;
+	font-family: Arial, sans-serif;
+}
+nav{
+	margin-bottom: 20px;
+}
+nav ul li{
+	display: inline-block;
+	margin: 0 10px;
 }
 .welcome{
 	display: flex;
