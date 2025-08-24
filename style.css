@@ -3,19 +3,20 @@
 	justify-content: center;
 }
 .welcome-container{
-	border: solid 3px;
+	border: solid 1px;
 	border-radius: 5px;
-	border-color: silver;
-	background-color: beige;
+	border-color: black;
+	background-color: rgba(217, 222, 222, 0.875);
 	display: inline-block;
 	padding: 10px;
 	height: 300px;
-	width: 600px;
+	width: 420px;
 	box-sizing: border-box;
 }
 .inside-container{
+	padding: 10px;
 	color: white;
 	background-color: black;
-	height: 260px;
-	width: 580px;
+	height: 180px;
+	width: 400px;
 }
