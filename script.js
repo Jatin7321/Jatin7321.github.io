@@ -12,10 +12,11 @@ function toggleMenu() {
 const minecraftGround = document.getElementById('minecraft-ground');
 const blockImages = [
     '/blocks/coal.png',
+    '/blocks/stone.png',
     '/blocks/redstone.png',
     '/blocks/iron.png',
     '/blocks/gold.png',
-    '/blocks/diamond.png.png'
+    '/blocks/diamond.png'
 ];
 
 function getRandomImage() {
@@ -32,7 +33,7 @@ function generateBlocks(count) {
     }
 }
 
-generateBlocks(80); 
+generateBlocks(90); 
 
 
 const repoData = {
