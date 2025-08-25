@@ -2,7 +2,6 @@ body{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding-top: 80px;
 }
 /* Base header */
 #header {
@@ -60,7 +59,7 @@ body{
     top: 60px; /* below header */
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,0.95);
+    background: rgba(0,0,0,0.85);
     text-align: center;
     padding: 10px;
     z-index: 2000;
@@ -80,6 +79,7 @@ body{
 
 
 .welcome{
+  padding-top: 100px;
 	display: flex;
 	justify-content: center;
 }
