@@ -146,6 +146,60 @@ body{
 }
 
 
+#programs{
+  max-width: 500px;
+  margin: 40px auto;
+  padding-top: 100px;
+}
+.p-container{
+  border: solid silver 1.5px;
+  border-radius: 5px;
+  background: rgba(80, 80, 80, 0.7);
+}
+.tabs{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.tabs .tab{
+  border: solid black 0.5px;
+  border-radius: 3px;
+  padding: 10px;
+  height: 20px;
+  width: 110px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+.list{
+  cursor: pointer;
+  border: solid 0.6px;
+  border-radius: 2px;
+  margin: 20px 10px;
+  padding: 10px;
+  color: whitesmoke;
+  background: rgba(0,0,0,0.9);
+}
+.list-back{
+  border: solid silver 12px;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.7);
+  
+}
+.tab:hover{
+  background: rgba(222, 222, 222, 0.5);
+  color: green;
+}
+.tab.active{
+  background: silver;
+  color: black;
+}
+.list:hover{
+  color: whitesmoke;
+  background: darkgreen;
+  border: solid 2px;
+  border-radius: 2px;
+}
 
 
 /* mcpe vibe */

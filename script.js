@@ -32,5 +32,40 @@ function generateBlocks(count) {
     }
 }
 
-// Generate a good number of blocks. You might need to adjust this number.
-generateBlocks(80); 
+generateBlocks(100); 
+
+
+const repoData = {
+    ds: [
+        "Singly Linked List"
+    ],
+    oop: [
+        "Student Grade Card"
+    ],
+    work: [
+        "Prashna Bhandar"
+    ]
+};
+const tabs = document.querySelectorAll(".tab");
+const list = document.getElementById("repo-list");
+
+function loadList(tab) {
+    list.innerHTML = "";
+    repoData[tab].forEach( item => {
+        const div = document.createElement("div");
+        div.className = "item";
+        div.textContent = item;
+        list.appendChild(div);
+    });
+}
+
+loadList("ds");
+
+tabs.forEach( tab => {
+   tab.addEventListener("click", () => {
+       document.querySelector(".tab.active").classList.remove("active");
+       tab.classList.add("active");
+       loadList(tab.dataset.tab);
+   }); 
+});
+
