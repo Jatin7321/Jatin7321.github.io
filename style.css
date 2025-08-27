@@ -361,28 +361,6 @@ body{
   .inside-container{
     width: 300px;
   }
-  
-  #contacts{
-    margin: 100px auto;
-    margin-bottom: 80px;
-    max-width: 380px;
-  }
-  
-  .inside-box{
-    display: flex;
-    justify-content: space-between;
-  
-  }
-  
-  .left-box{
-    height: 140px;
-    width: 250px;
-  }
-  .right-box{
-    height: 130px;
-    width: 130px;
-    margin: auto;
-  }
  
   
   .ground {
@@ -412,6 +390,52 @@ body{
     height: 30px;
     background-size: cover;
   }
+  
+  #contacts{
+  border: solid 2px #555555;
+  color: whitesmoke;
+  border-radius: 5px;
+  margin: 100px auto;
+  margin-bottom: 80px;
+  max-width: 700px;
+  background: rgba(0,0,0,0.7);
+  cursor: context-menu;
+}
+
+.inside-box{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.left-box{
+  border: solid #8b8b8b;
+  border-radius: 3px;
+  height: 140px;
+  width: 330px;
+  background: #c6c6c6;
+  margin: 5px;
+}
+.right-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 5px;
+}
+.craft-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 26px);
+  grid-template-rows: repeat(3, 26px);
+  gap: 1px;
+}
+.slot, .result-slot{
+  height: 26px;
+  width: 26px;
+}
+.arrow{
+  font-size: 20px;
+  font-weight: bold;
+}
 
   
 }
