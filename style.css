@@ -73,7 +73,7 @@ body{
 	background-color: #e0e0e0;
 	display: inline-block;
 	padding: 5px;
-	height: 200px;
+	height: 220px;
 	max-width: 600px;
 }
 
@@ -83,7 +83,7 @@ body{
 	position: relative;
 	color: white;
 	background-color: black;
-	height: 140px;
+	height: 160px;
 	width: 500px;
 	display: flex;
 	justify-content: center;
