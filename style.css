@@ -1,8 +1,18 @@
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('/fonts/Minecraftia.ttf') format('truetype');
+}
 body{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+  font-family: 'Minecraftia', sans-serif;
+  margin: 0;
+  min-height: 200vh;
+  background: linear-gradient(to bottom, #6ecfff, #bdefff);
+  background-attachment: fixed;
 }
+
 /* Base header */
 #header {
   position: fixed;
@@ -24,7 +34,6 @@ body{
   height: 40px;
   border: none;
   color: white;
-  font-family: "Press Start 2P", cursive;
   font-size: 10px;
   margin: 3px;
   cursor: pointer;
@@ -47,8 +56,7 @@ body{
 .welcome-container{
 	display: flex;
 	justify-content: center;
-	font-family: 'Press Start 2P', cursive;
-	font-size: 13px;
+	font-size: 15px;
 	border: solid 1px;
 	border-radius: 5px;
 	border-color: black;
@@ -58,9 +66,10 @@ body{
 	height: 200px;
 	max-width: 600px;
 }
+
 .inside-container{
-	padding: 10px;
-	font-size: 10px;
+	padding: 5px;
+	font-size: 12px;
 	position: relative;
 	color: white;
 	background-color: black;
@@ -197,15 +206,6 @@ body{
 
 
 /* mcpe vibe */
-body {
-  margin: 0;
-  min-height: 200vh; /* just so scrolling works */
-  font-family: 'Press Start 2P', cursive;
-
-  /* full page Minecraft sky */
-  background: linear-gradient(to bottom, #6ecfff, #bdefff);
-  background-attachment: fixed; /* stays while scrolling */
-}
 
 /* Clouds */
 .cloud {
