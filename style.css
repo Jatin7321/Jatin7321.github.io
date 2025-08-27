@@ -38,46 +38,6 @@ body{
   cursor: pointer;
 }
 
-/* --------------------- */
-/* 📱 Mobile View */
-@media (max-width: 768px) {
-  /* Stack vertically */
-  #header {
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-
-  .menu-toggle {
-    display: block;
-    margin-right: 0;
-  }
-
-  #header .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* below header */
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.85);
-    text-align: center;
-    padding: 10px;
-    z-index: 2000;
-  }
-
-  #header .menu.active {
-    display: flex;
-  }
-
-  #header .menu button {
-    width: 90%;
-    max-width: 300px;
-    margin: 10px 40px;
-  }
-}
-
-
-
 .welcome{
   padding-top: 100px;
 	display: flex;
@@ -96,7 +56,7 @@ body{
 	display: inline-block;
 	padding: 5px;
 	height: 200px;
-	width: 340px;
+	max-width: 600px;
 }
 .inside-container{
 	padding: 10px;
@@ -105,7 +65,7 @@ body{
 	color: white;
 	background-color: black;
 	height: 140px;
-	width: 320px;
+	width: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -147,7 +107,7 @@ body{
 
 
 #programs{
-  max-width: 500px;
+  max-width: 700px;
   margin: 40px auto;
   padding-top: 100px;
 }
@@ -201,6 +161,40 @@ body{
   border-radius: 2px;
 }
 
+/* Contact Info & Links */
+#contacts{
+  border: solid 2px #555555;
+  color: whitesmoke;
+  border-radius: 5px;
+  margin: 100px auto;
+  margin-bottom: 80px;
+  max-width: 700px;
+  background: rgba(0,0,0,0.7);
+  cursor: context-menu;
+}
+
+.inside-box{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.left-box{
+  border: solid #8b8b8b;
+  border-radius: 3px;
+  height: 260px;
+  width: 450px;
+  background: #c6c6c6;
+}
+.right-box{
+  border: solid #8b8b8b;
+  border-radius: 3px;
+  height: 240px;
+  width: 240px;
+  margin: auto;
+  background: #c6c6c6;
+}
+
+
 
 /* mcpe vibe */
 body {
@@ -252,11 +246,11 @@ body {
 
 .ground {
   position: fixed;
-  bottom: 160px;
+  bottom: 150px;
   width: 100%;
   height: 50px;
   background: url('/images/Grass_Block.png') repeat-x;
-  background-size: 30px 30px;
+  background-size: 50px 50px;
   filter: blur(1.5px);
   z-index: -1;
 }
@@ -273,7 +267,7 @@ body {
 
 #minecraft-ground {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     bottom: 0px;
     width: 100%;
     filter: blur(1.5px);
@@ -284,7 +278,109 @@ body {
 }
 
 .block {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+
+/* --------------------- */
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  /* Stack vertically */
+  #header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-right: 0;
+  }
+
+  #header .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* below header */
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    text-align: center;
+    padding: 10px;
+    z-index: 2000;
+  }
+
+  #header .menu.active {
+    display: flex;
+  }
+
+  #header .menu button {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px 40px;
+  }
+  
+  #programs {
+    width: 340px;
+    margin: 40px auto;
+    padding-top: 100px;
+  }
+
+  .inside-container{
+    width: 300px;
+  }
+  
+  #contacts{
+    margin: 100px auto;
+    margin-bottom: 80px;
+    max-width: 380px;
+  }
+  
+  .inside-box{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .left-box{
+    height: 140px;
+    width: 250px;
+  }
+  .right-box{
+    height: 130px;
+    width: 130px;
+    margin: auto;
+  }
+ 
+  
+  .ground {
+    position: fixed;
+    bottom: 160px;
+    width: 100%;
+    height: 50px;
+    background: url('/images/Grass_Block.png') repeat-x;
+    background-size: 30px 30px;
+    filter: blur(1.5px);
+    z-index: -1;
+  }
+  
+  #minecraft-ground {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    bottom: 0px;
+    width: 100%;
+    filter: blur(1.5px);
+    z-index: -2;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .block {
     width: 30px;
     height: 30px;
     background-size: cover;
+  }
+
+  
 }

@@ -33,7 +33,7 @@ function generateBlocks(count) {
     }
 }
 
-generateBlocks(90); 
+generateBlocks(80); 
 
 
 const repoData = {
