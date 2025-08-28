@@ -77,3 +77,36 @@ tabs.forEach( tab => {
    }); 
 });
 
+// Show button after scrolling down
+window.onscroll = function() {
+    let btn = document.getElementById("scrollBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+// Dragon scroll + animation
+function scrollDragon() {
+    let dragonWrapper = document.getElementById("dragonWrapper");
+    
+    dragonWrapper.style.display = "block";
+    dragonWrapper.classList.add("fly");
+    
+    // Smooth upward page scroll
+    let scrollStep = -window.scrollY / 200;
+    let scrollInterval = setInterval(function() {
+        if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+        } else {
+            clearInterval(scrollInterval);
+        }
+    }, 15);
+    
+    // Reset after animation
+    setTimeout(() => {
+        dragonWrapper.style.display = "none";
+        dragonWrapper.classList.remove("fly");
+    }, 4000); // match flyUp duration
+}

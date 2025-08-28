@@ -164,6 +164,7 @@ body{
   border: solid;
   box-shadow: rgba(0, 0, 0, 1);
   box-shadow: inset 2px 2px 0px #c6c6c6;
+  cursor: pointer;
 }
 .about-right-box{
   border: solid 3px #555555;
@@ -285,6 +286,7 @@ body{
   margin: auto;
   background: #dcdcdc;
   box-shadow: inset 2px 2px #aaa;
+  cursor: pointer;
 }
 .arrow{
   font-size: 35px;
@@ -370,6 +372,58 @@ body{
     background-size: cover;
 }
 
+/* Button */
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 22px;
+  border: solid #555;
+  outline: none;
+  background: #cdcdcd;
+  color: #333;
+  cursor: pointer;
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+#scrollBtn:hover { background: #444; }
+
+/* Dragon wrapper */
+#dragonWrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+
+/* Dragon image */
+#dragon {
+  width: 700px;
+  animation: flap 2s ease-in-out infinite;
+}
+
+/* Dragon flies up */
+#dragonWrapper.fly {
+  display: block;
+  animation: flyUp 10s linear forwards;
+}
+
+/* Upward movement */
+@keyframes flyUp {
+  from { transform: translateY(0) rotate(50deg);}
+  to   { transform: translateY(-220vh) rotate(10deg);}
+}
+
+/* Small bobbing (flap effect) */
+@keyframes flap {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(-8px) scale(1.02); }
+}
 
 /* --------------------- */
 /* 📱 Mobile View */
@@ -530,6 +584,8 @@ body{
   font-weight: bold;
 }
 
-  
+  #dragon{
+    width: 250px;
+  }
 }
 
