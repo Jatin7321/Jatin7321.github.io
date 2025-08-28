@@ -416,6 +416,35 @@ body{
     width: 380px;
   }
   
+  #about{
+  margin: 100px auto;
+  width: 380px;
+  height: 260px;
+}
+
+.about-head{
+  height: 25px;
+  width: 380px;
+}
+.about-left-box{
+  width: 160px;
+  height: 180px;
+}
+.me-button{
+  height: 30px;
+  width: 150px;
+  margin: 5px auto;
+  font-size: 12px;
+}
+.about-right-box{
+  height: 180px;
+  width: 300px;
+}
+.content img{
+  width: 200px;
+  height: auto;
+}
+  
   #programs {
     width: 340px;
     margin: 40px auto;
