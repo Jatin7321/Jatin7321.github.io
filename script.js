@@ -7,6 +7,13 @@ function toggleMenu() {
   document.querySelector("#header .menu").classList.toggle("active");
 }
 
+function showDiv(id) {
+  document.querySelectorAll('.content').forEach(div => {
+    div.style.display = "none";
+  });
+  document.getElementById(id).style.display = "block";
+}
+
 
 // New code to generate Minecraft blocks
 const minecraftGround = document.getElementById('minecraft-ground');
