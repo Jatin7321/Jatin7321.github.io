@@ -1,3 +1,10 @@
+  window.addEventListener("load", function(){
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("contents").style.display = "block";
+    }, 5000);
+  });
+
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth"});
   document.querySelector("#header .menu").classList.remove("active");
