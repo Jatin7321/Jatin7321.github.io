@@ -446,8 +446,8 @@ body{
 
 /* Upward movement */
 @keyframes flyUp {
-  from { transform: translateY(0) rotate(50deg);}
-  to   { transform: translateY(-220vh) rotate(10deg);}
+  from { transform: translateY(0) rotate(70deg);}
+  to   { transform: translateY(-220vh) rotate(20deg);}
 }
 
 /* Small bobbing (flap effect) */
