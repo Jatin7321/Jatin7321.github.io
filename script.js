@@ -84,7 +84,16 @@ tabs.forEach( tab => {
    }); 
 });
 
-// Show button after scrolling down
+const btn = document.getElementById("feedbackBtn");
+const popup = document.getElementById("feedbackPopUp");
+const close = document.getElementById("closePopUp");
+btn.onclick = (e) => {
+    e.preventDefault();
+    popup.style.display = "flex";
+};
+
+
+
 window.onscroll = function() {
     let btn = document.getElementById("scrollBtn");
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -93,8 +102,9 @@ window.onscroll = function() {
         btn.style.display = "none";
     }
 };
+close.onclick = () => popup.style.display = "none";
+window.onclick = e => { if( e.target === popup) popup.style.display = "none";}
 
-// Dragon scroll + animation
 function scrollDragon() {
     let dragonWrapper = document.getElementById("dragonWrapper");
     

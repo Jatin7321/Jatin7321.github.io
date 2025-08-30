@@ -85,8 +85,10 @@
                 <div class="tab" data-tab="oop">OOP</div>
                 <div class="tab" data-tab="work">My Work</div>
             </div>
-            <div class="list-back">
-                <div class="list" id="repo-list"></div>
+            <div class="repo-bg">
+                <div class="list-back">
+                    <div class="list" id="repo-list"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -126,22 +128,43 @@
     </section>
 
     <section id="contacts">
-        <h2>Contact Me</h2>
         <div class="larg-box">
+            <h2>Contact Me</h2>
         <div class="inside-box">
         <div class="craft-grid">
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
-            <div class="slot"></div>
+            <div class="slot" data-tip="Instagram">
+                <a href="https://www.instagram.com/jatin_zuro?igsh=ZDA5czhrZGFyeTg="><img src="/logo/instagram.png" class="logo"></a>
+            </div>
+            <div class="slot" data-tip="Github">
+                <a href="https://github.com/Jatin7321"><img src="/logo/github.png" class="logo"></a>
+            </div>
+            <div class="slot" data-tip="Email">
+                <a href="mailto:jatinrabha53@gmail.com"><img src="/logo/gmail.png" class="logo"></a>
+            </div>
+            <div class="slot" data-tip="Youtube">
+                <a href="https://youtube.com/@jatin7321?si=nfw3U1P9x20SNiyv"><img src="/logo/youtube.png" class="logo"></a>
+            </div>
+            <div class="slot" data-tip="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=100092287788334"><img src="/logo/fb.png" class="logo"></a>
+            </div>
+            <div class="slot" data-tip="null"></div>
+            <div class="slot" data-tip="null"></div>
+            <div class="slot" data-tip="null"></div>
+            <div class="slot" data-tip="null"></div>
         </div>
         <div class="arrow">➡</div>
-        <div class="result-slot"></div>
+        <div class="result-slot" data-tip="Send_feedback">
+            <a href="#" id="feedbackBtn"><img src="/logo/Book_and_Quill.png" class="feed-back"></a>
+            <div id="feedbackPopUp">
+                <div class="PopUp-content">
+                    <form action="https://formspree.io/f/xnnbdpey" method="POST">
+                        <textarea name="feedback" placeholder="Write your feedback....."></textarea>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                <span id="closePopUp" data-tip="close">&times;</span>
+            </div>
+        </div>
         </div>
         </div>
     </section>
