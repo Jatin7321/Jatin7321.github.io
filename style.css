@@ -12,7 +12,7 @@ body{
   background: linear-gradient(to bottom, #6ecfff, #bdefff);
   background-attachment: fixed;
 }
-
+/*
 #preloader {
   position: fixed;
   top: 0; left: 0;
@@ -43,7 +43,7 @@ body{
   to { opacity: 1;}
 }
 
-
+*/
 /* Base header */
 #header {
   position: fixed;
@@ -60,7 +60,6 @@ body{
   height: 50px;
 }
 
-/* Buttons (desktop style with MCPE texture) */
 #header .menu button {
   background: #e0e0e0;
   background-size: 100% 100%;
@@ -82,7 +81,6 @@ body{
   font-size: 12px;
 }
 
-/* Hamburger icon (hidden by default on desktop) */
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -107,7 +105,7 @@ body{
 	display: inline-block;
 	padding: 5px;
 	height: 220px;
-	max-width: 600px;
+	max-width: 700px;
 }
 
 .inside-container{
@@ -117,7 +115,7 @@ body{
 	color: white;
 	background-color: black;
 	height: 160px;
-	width: 500px;
+	width: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -125,8 +123,6 @@ body{
 	line-height: 3;
 }
 
-
-/* load animation */
 .line{
 	position: absolute;
 	width: 90%;
@@ -157,8 +153,9 @@ body{
 	100%{ content: '...';}
 }
 #about{
-  margin: 80px auto;
-  width: 700px;
+  margin: 50px auto;
+  padding-top: 100px;
+  width: 900px;
   height: 260px;
 }
 .about{
@@ -174,12 +171,12 @@ body{
   height: 30px;
   align-items: center;
   justify-content: center;
-  width: 698px;
+  width: 898px;
 }
 .about-left-box{
   border: solid 3px #555555;
   background: #333333;
-  width: 240px;
+  width: 300px;
   height: 220px;
   border-radius: 0 0 0 3px;
 }
@@ -213,9 +210,9 @@ body{
 
 
 #programs{
-  max-width: 700px;
-  margin: 40px auto;
-  padding-top: 100px;
+  max-width: 900px;
+  margin: 10px auto;
+  padding-top: 50px;
 }
 .p-container{
   border: solid silver 1.5px;
@@ -271,6 +268,43 @@ body{
   border: solid 1.5px #fff;
   box-shadow: inset 3px 3px 0px #4CAF50;
   font-size: 16px;
+}
+
+#notes{
+  padding-top: 50px;
+}
+.notes-section {
+  text-align: center;
+  margin: 80px auto;
+  background: url('/images/book.png');
+  width: 860px;
+  aspect-ratio: 726/466;
+  background-size: cover;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.note-paper{
+  width: 48%;
+  text-align: left;
+  line-height: 2;
+}
+.note-paper a{
+  text-decoration: none;
+  color: green;
+}
+.note-paper a:hover {
+  text-decoration: underline;
+  color: red;
+}
+.notes-section h2{
+  padding-left: 100px;
+}
+.left-page{
+  padding-left: 50px;
+}
+.rigth-page{
+  padding-left: 50px;
 }
 
 /* Contact Info & Links */
@@ -432,13 +466,11 @@ body{
   display: none;
 }
 
-/* Dragon image */
 #dragon {
   width: 700px;
   animation: flap 2s ease-in-out infinite;
 }
 
-/* Dragon flies up */
 #dragonWrapper.fly {
   display: block;
   animation: flyUp 10s linear forwards;
@@ -446,15 +478,14 @@ body{
 
 /* Upward movement */
 @keyframes flyUp {
-  from { transform: translateY(0) rotate(70deg);}
+  from { transform:translateY(0) rotate(70deg);}
   to   { transform: translateY(-220vh) rotate(20deg);}
 }
 
-/* Small bobbing (flap effect) */
-@keyframes flap {
+/*@keyframes flap {
   0%, 100% { transform: translateY(0) scale(1); }
   50%      { transform: translateY(-8px) scale(1.02); }
-}
+}*/
 
 
 /* --------------------- */
@@ -507,7 +538,7 @@ body{
   }
   
   #about{
-  margin: 100px auto;
+  margin: 70px auto;
   width: 380px;
   height: 260px;
 }
@@ -537,14 +568,26 @@ body{
   
   #programs {
     width: 340px;
-    margin: 40px auto;
-    padding-top: 100px;
+    margin: 20px auto;
+    padding-top: 50px;
   }
 
   .inside-container{
     width: 300px;
   }
- 
+  
+  .notes-section{
+    width: 380px;
+  }
+  .note-paper h2{
+    padding-left: 50px;
+    margin: 3px;
+  }
+ .note-paper{
+   padding-left: 15px;
+   line-height: 1.8;
+   font-size: 11px;
+ }
   
   .ground {
     position: fixed;

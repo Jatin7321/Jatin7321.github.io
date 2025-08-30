@@ -1,9 +1,9 @@
-  window.addEventListener("load", function(){
+ /* window.addEventListener("load", function(){
     setTimeout(() => {
       document.getElementById("preloader").style.display = "none";
       document.getElementById("contents").style.display = "block";
     }, 5000);
-  });
+  });*/
 
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth"});
@@ -101,7 +101,6 @@ function scrollDragon() {
     dragonWrapper.style.display = "block";
     dragonWrapper.classList.add("fly");
     
-    // Smooth upward page scroll
     let scrollStep = -window.scrollY / 200;
     let scrollInterval = setInterval(function() {
         if (window.scrollY !== 0) {
@@ -111,9 +110,8 @@ function scrollDragon() {
         }
     }, 15);
     
-    // Reset after animation
     setTimeout(() => {
         dragonWrapper.style.display = "none";
         dragonWrapper.classList.remove("fly");
-    }, 4000); // match flyUp duration
+    }, 4000);
 }
