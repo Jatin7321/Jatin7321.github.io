@@ -1,9 +1,9 @@
- /* window.addEventListener("load", function(){
+ window.addEventListener("load", function(){
     setTimeout(() => {
       document.getElementById("preloader").style.display = "none";
       document.getElementById("contents").style.display = "block";
-    }, 5000);
-  });*/
+    }, 3000);
+  });
 
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth"});
@@ -47,16 +47,6 @@ function generateBlocks(count) {
 
 generateBlocks(80); 
 
-
-
-
-tabs.forEach( tab => {
-   tab.addEventListener("click", () => {
-       document.querySelector(".tab.active").classList.remove("active");
-       tab.classList.add("active");
-       loadList(tab.dataset.tab);
-   }); 
-});
 
 const btn = document.getElementById("feedbackBtn");
 const popup = document.getElementById("feedbackPopUp");

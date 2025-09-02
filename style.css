@@ -12,7 +12,7 @@ body{
   background: linear-gradient(to bottom, #6ecfff, #bdefff);
   background-attachment: fixed;
 }
-/*
+
 #preloader {
   position: fixed;
   top: 0; left: 0;
@@ -24,7 +24,7 @@ body{
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  animation: fadeOut 5s ease 3s forwards;
+  animation: fadeOut 5s ease 4s forwards;
 }
 #preloader img {
   width: 500px;
@@ -34,17 +34,7 @@ body{
   to { opacity: 0; visibility: hidden;}
 }
 
-#contents{
-  opacity: 0;
-  animation: fadeIn 2s ease forwards;
-}
-@keyframes fadeIn{
-  from { opacity: 0;}
-  to { opacity: 1;}
-}
 
-*/
-/* Base header */
 #header {
   position: fixed;
   top: 0; left: 0;
@@ -570,6 +560,14 @@ textarea{
     max-width: 300px;
     margin: 10px 40px;
   }
+  
+  .welcome-container{
+    width: 370px;
+  }
+  .inside-container{
+    width: 360px;
+  }
+  
   #about{
     width: 380px;
   }
@@ -607,15 +605,13 @@ textarea{
   height: auto;
 }
   
-  #programs {
-    width: 340px;
-    margin: 20px auto;
-    padding-top: 50px;
-  }
+  .outer-shell {
+  width: 376px;
+}
 
-  .inside-container{
-    width: 300px;
-  }
+.program-list {
+  width: 330px;
+}
   
   .notes-section{
     width: 380px;
@@ -658,55 +654,38 @@ textarea{
     background-size: cover;
   }
   
-  #contacts{
-  border: solid 2px #555555;
-  color: whitesmoke;
-  border-radius: 5px;
-  margin: 100px auto;
-  margin-bottom: 80px;
-  max-width: 700px;
-  background: rgba(0,0,0,0.7);
-  cursor: context-menu;
-}
-
-.inside-box{
+ .inside-box{
   display: flex;
   justify-content: space-between;
-  
 }
-.left-box{
-  border: solid #8b8b8b;
-  border-radius: 3px;
-  height: 140px;
-  width: 330px;
-  background: #c6c6c6;
-  margin: 5px;
-}
-.right-box{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  margin: 5px;
+.larg-box{
+  width: 300px;
+  margin: 10px auto;
 }
 .craft-grid{
   display: grid;
-  grid-template-columns: repeat(3, 26px);
-  grid-template-rows: repeat(3, 26px);
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
   gap: 1px;
 }
 .slot{
-  height: 30px;
-  width: 30px;
-}
-.result-slot{
   height: 40px;
   width: 40px;
+}
+.result-slot{
+  height: 50px;
+  width: 50px;
 }
 .arrow{
   font-size: 30px;
   font-weight: bold;
   color: #555;
+}
+.logo{
+  height: 30px;
+}
+.feed-back{
+  height: 40px;
 }
 
   #dragon{
