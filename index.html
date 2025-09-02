@@ -79,16 +79,47 @@
 
     <section id="programs">
         <h2>Program files</h2>
-        <div class="p-container">
-            <div class="tabs">
-                <div class="tab active" data-tab="ds">DS</div>
-                <div class="tab" data-tab="oop">OOP</div>
-                <div class="tab" data-tab="work">My Work</div>
+        <div class="program-container">
+            <div class="button-tabs">
+                <button class="tab-button active" onclick="showTab('ds')">DS</button>
+                <button class="tab-button" onclick="showTab('oop')">OOP</button>
+                <button class="tab-button" onclick="showTab('mywork')">My Work</button>
             </div>
-            <div class="repo-bg">
-                <div class="list-back">
-                    <div class="list" id="repo-list"></div>
+            <div class="outer-shell">
+            <div class="program-list">
+                <div id="ds">
+                    <ol>
+                        <li>
+                            <button>Linked list</button>
+                            <button>View Code</button>
+                        </li>
+                        <li>
+                            <button>Stack</button>
+                            <button>View Code</button>
+                        </li>
+                    </ol>
                 </div>
+                <div id="oop">
+                    <ol>
+                        <li>
+                            <button>Mumber Swapping</button>
+                            <button>View Code</button>
+                        </li>
+                        <li>
+                            <button>Students Grade Card</button>
+                            <button>View Code</button>
+                        </li>
+                    </ol>
+                </div>
+                <div id="mywork">
+                    <ol>
+                        <li>
+                            <button>Prashna Bhandar</button>
+                    
+                        </li>
+                    </ol>
+                </div>
+            </div>
             </div>
         </div>
     </section>

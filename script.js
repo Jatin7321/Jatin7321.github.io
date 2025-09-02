@@ -21,8 +21,6 @@ function showDiv(id) {
   document.getElementById(id).style.display = "block";
 }
 
-
-// New code to generate Minecraft blocks
 const minecraftGround = document.getElementById('minecraft-ground');
 const blockImages = [
     '/blocks/coal.png',
@@ -50,31 +48,7 @@ function generateBlocks(count) {
 generateBlocks(80); 
 
 
-const repoData = {
-    ds: [
-        "Singly Linked List"
-    ],
-    oop: [
-        "Student Grade Card"
-    ],
-    work: [
-        "Prashna Bhandar"
-    ]
-};
-const tabs = document.querySelectorAll(".tab");
-const list = document.getElementById("repo-list");
 
-function loadList(tab) {
-    list.innerHTML = "";
-    repoData[tab].forEach( item => {
-        const div = document.createElement("div");
-        div.className = "item";
-        div.textContent = item;
-        list.appendChild(div);
-    });
-}
-
-loadList("ds");
 
 tabs.forEach( tab => {
    tab.addEventListener("click", () => {

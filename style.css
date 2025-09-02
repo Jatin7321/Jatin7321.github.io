@@ -214,81 +214,43 @@ body{
   display: block;
 }
 
-
-#programs{
-  max-width: 900px;
-  margin: 10px auto;
-  padding-top: 50px;
-}
-.p-container{
-  border-radius: 5px;
-  height: 265px;
-}
-.repo-bg{
-  height: 240px;
-  width: 900px;
-  background: #dcdcdc;
-  padding-top: 10px;
-  box-shadow: 
-    inset 3px 3px #fff,
-    inset -3px -3px #555;
-}
-.tabs{
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
-.tabs .tab{
-  border: solid black 0.5px;
-  border-radius: 3px;
-  padding: 10px;
-  height: 20px;
-  width: 250px;
-  font-size: 17px;
-  text-align: center;
-  cursor: pointer;
-  color: white;
-  background: #777;
-  box-shadow: 
-    inset 2px 2px #fff,
-    inset -2px -2px #555;
-}
-.list{
-  cursor: pointer;
-  border: solid 2px #555;
-  margin: 20px 10px;
-  padding: 15px;
-  font-size: 16px;
-  color: whitesmoke;
-  background: #555;
-  box-shadow: 
-    inset 3px 3px #999,
-    inset -3px -3px #333;
-}
-.list-back{
-  background: #000;
-  height: 200px;
-  width: 880px;
-  margin: 10px auto;
-  padding-top: 5px;
-}
-.tab:hover{
-  background: #c6c6c6;
-  color: green;
-  font-size: 15px;
-}
-.tab.active{
-  background: #e0e0e0;
-  color: black;
-  font-size: 20px;
-}
-.list:hover, .me-button:hover{
+.me-button:hover{
   color: #fff;
   background: #4CAF50;
   border: solid 1.5px #fff;
   box-shadow: inset 3px 3px #55ff55,
     inset -3px -3px #228b22;
   font-size: 16px;
+}
+
+#programs{
+  margin: 30px auto;
+  padding-top: 80px;
+}
+.button-tabs button{
+  color: #000;
+  background: #dcdcdc;
+  height: 30px;
+}
+.outer-shell{
+  border: solid 1px;
+  width: 846px;
+  box-shadow: 
+    inset 3px 3px #fff,
+    inset -3px -3px #000;
+  z-index: 100;
+  margin: 0px auto;
+}
+.program-list{
+  border: solid 20px #dcdcdc;
+  background: rgba(0,0,0,0.7);
+  width: 800px;
+  margin: 3px auto;
+  box-shadow: 
+    inset 4px 4px #000,
+    inset -4px -4px #fff;
+  backdrop-filter: blur(5px);
+  z-index: -1;
 }
 
 #notes{
@@ -424,6 +386,7 @@ body{
   background-size: cover;
   height: 300px;
   aspect-ratio: 591/735;
+  border-radius: 10px;
 }
 #closePopUp{
   padding: 10px;
