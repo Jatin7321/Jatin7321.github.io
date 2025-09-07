@@ -59,13 +59,16 @@
         </div>
         <div class="about">
         <div class="about-left-box">
-            <button onclick="showDiv('box1')" class="me-button">My Info</button>
+            <button onclick="showDiv('box1')" class="me-button active">My Info</button>
             <button onclick="showDiv('box2')" class="me-button">Skills</button>
             <button onclick="showDiv('box3')" class="me-button">Hobbies</button>
         </div>
         <div class="about-right-box">
             <div id="box1" class="content">
-                <img src="/images/skill.jpg" height="200px" width="350px">
+                <img src="/images/me.jpg" height="200px" style="border-radius: 30px;">
+                <p>Hi dear ! <br>
+                    I am Jatin, and this is the place where you can find everything about me.
+                    and alsao you will have a rough knowledge of my creativity through this place.</p>
             </div>
             <div id="box2" class="content">
                 <img src="/images/crafting.jpg" height="200px" width="350px">
@@ -87,34 +90,34 @@
             </div>
             <div class="outer-shell">
             <div class="program-list">
-                <div id="ds">
+                <div id="ds" class="tab-content">
                     <ol>
                         <li>
-                            <button>Linked list</button>
-                            <button>View Code</button>
+                            <button class="name">Linked list</button>
+                            <button class="view">View Code</button>
                         </li>
                         <li>
-                            <button>Stack</button>
-                            <button>View Code</button>
+                            <button class="name">Stack</button>
+                            <button class="view">View Code</button>
                         </li>
                     </ol>
                 </div>
-                <div id="oop">
+                <div id="oop" class="tab-content" style="display: none;">
                     <ol>
                         <li>
-                            <button>Mumber Swapping</button>
-                            <button>View Code</button>
+                            <button class="name">Mumber Swapping</button>
+                            <button class="view">View Code</button>
                         </li>
                         <li>
-                            <button>Students Grade Card</button>
-                            <button>View Code</button>
+                            <button class="name">Students Grade Card</button>
+                            <button class="view">View Code</button>
                         </li>
                     </ol>
                 </div>
-                <div id="mywork">
+                <div id="mywork" class="tab-content" style="display: none;">
                     <ol>
                         <li>
-                            <button>Prashna Bhandar</button>
+                            <button class="name">Prashna Bhandar</button>
                     
                         </li>
                     </ol>

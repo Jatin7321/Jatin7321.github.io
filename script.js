@@ -48,6 +48,20 @@ function generateBlocks(count) {
 generateBlocks(80); 
 
 
+function showTab(tabId) {
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+        content.style.display = 'none';
+    });
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+    document.getElementById(tabId).style.display = 'block';
+    event.currentTarget.classList.add('active');
+}
+
+
 const btn = document.getElementById("feedbackBtn");
 const popup = document.getElementById("feedbackPopUp");
 const close = document.getElementById("closePopUp");
@@ -87,5 +101,5 @@ function scrollDragon() {
     setTimeout(() => {
         dragonWrapper.style.display = "none";
         dragonWrapper.classList.remove("fly");
-    }, 4000);
+    }, 7000);
 }

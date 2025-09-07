@@ -171,7 +171,7 @@ body{
   border: solid 3px #555555;
   background: #333333;
   width: 300px;
-  height: 220px;
+  height: 300px;
   border-radius: 0 0 0 3px;
 }
 .me-button{
@@ -193,9 +193,15 @@ body{
 .about-right-box{
   border: solid 3px #555555;
   background: #333333;
-  height: 220px;
+  height: 300px;
   width: 900px;
   border-radius: 0 0 3px 0;
+  color: #fff;
+}
+#box1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content{
   display: none;
@@ -212,19 +218,44 @@ body{
     inset -3px -3px #228b22;
   font-size: 16px;
 }
+.me-button .active{
+  background: #000;
+}
 
 #programs{
   margin: 30px auto;
   padding-top: 80px;
 }
+.button-tabs{
+  display: flex;
+  justify-content: space-between;
+}
 .button-tabs button{
+  margin: 5px auto;
   color: #000;
   background: #dcdcdc;
-  height: 30px;
+  font-family: 'Minecraftia', sans-serif;
+  height: 50px;
+  width: 200px;
+  box-shadow: 
+    inset 3px 3px #fff,
+    inset -2px -2px #000;
+  cursor: pointer;
+}
+.button-tabs button:hover{
+  background: #777;
+  color: #fff;
+  font-size: 16px;
+}
+.button-tabs .active{
+  background: #444;
+  color: #fff;
+  font-size: 18px;
 }
 .outer-shell{
   border: solid 1px;
   width: 846px;
+  height: 400px;
   box-shadow: 
     inset 3px 3px #fff,
     inset -3px -3px #000;
@@ -234,13 +265,25 @@ body{
 .program-list{
   border: solid 20px #dcdcdc;
   background: rgba(0,0,0,0.7);
+  font-family: 'Minecraftia', sans-serif;
+  color: #fff;
   width: 800px;
+  height: 354px;
   margin: 3px auto;
   box-shadow: 
     inset 4px 4px #000,
     inset -4px -4px #fff;
   backdrop-filter: blur(5px);
   z-index: -1;
+}
+.tab-content button{
+  font-family: 'Minecraftia', sans-serif;
+  cursor: pointer;
+  height: 40px;
+  margin: 10px auto;
+}
+.name{
+  width: 600px;
 }
 
 #notes{
@@ -487,11 +530,9 @@ textarea{
 }
 #scrollBtn:hover { background: #444; }
 
-/* Dragon wrapper */
 #dragonWrapper {
   position: fixed;
-  bottom: 50px;
-  right: 40px;
+  bottom: -300px;
   z-index: 999;
   pointer-events: none;
   display: none;
