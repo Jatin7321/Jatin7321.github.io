@@ -197,6 +197,7 @@ body{
   width: 900px;
   border-radius: 0 0 3px 0;
   color: #fff;
+  overflow: auto;
 }
 #box1{
   display: flex;
@@ -225,6 +226,7 @@ body{
 #programs{
   margin: 30px auto;
   padding-top: 80px;
+  max-width: 900px;
 }
 .button-tabs{
   display: flex;
